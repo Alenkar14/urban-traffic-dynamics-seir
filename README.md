@@ -27,7 +27,7 @@ El sistema dinámico se rige por las siguientes ecuaciones diferenciales:
 
 *Donde:* **β** (Tasa de exposición/contagio de tráfico), **σ** (Tasa de transición al embotellamiento), y **γ** (Tasa de liberación/salida).
 
-## 📊 Escenarios Simulados e Insights Clave
+## Escenarios Simulados e Insights Clave
 El modelo se sometió a 6 escenarios operativos partiendo de un parque vehicular simultáneo de $N = 2,240,000$ unidades:
 1. **Escenario Base:** Flujo natural. El pico de congestión total alcanza 1.1 millones de vehículos al minuto 21.
 2. **Semáforos Inteligentes:** Disminuyen el pico de congestión, pero prolongan la persistencia temporal del tráfico.
@@ -37,18 +37,18 @@ El modelo se sometió a 6 escenarios operativos partiendo de un parque vehicular
 6. **Contingencia Crítica (Accidente/Clima):** Demostró la vulnerabilidad sistémica; la tasa de liberación (γ) actúa como cuello de botella irreversible, provocando un colapso que no se resuelve dentro del marco temporal simulado de 100 minutos.
 
 ## Estructura del Proyecto
-* `src/` : Código fuente en Python con la implementación del modelo ODE.
 * `docs/` : Reporte de investigación original (PDF).
-* `requirements.txt` : Lista de dependencias.
+* `simulacion_trafico_seir.ipynb` : Notebook interactivo con la implementación del modelo ODE y visualización de resultados.
+* `requirements.txt` : Lista de dependencias (incluye Jupyter para ejecución).
 
-## Getting Started (Guía de Instalación)
+## 🚀 Getting Started (Guía de Instalación)
 
 Sigue estos pasos para reproducir la simulación y visualizar las curvas epidemiológicas del tráfico:
 
 ### 1. Clonar el repositorio
 ```bash
-git clone [https://github.com/TU-USUARIO/TU-REPOSITORIO-SEIR.git](https://github.com/TU-USUARIO/TU-REPOSITORIO-SEIR.git)
-cd TU-REPOSITORIO-SEIR
+git clone [https://github.com/Alenkar14/urban-traffic-dynamics-seir.git](https://github.com/Alenkar14/urban-traffic-dynamics-seir.git)
+cd urban-traffic-dynamics-seir
 ```
 
 ### 2. Configurar el entorno virtual (Recomendado)
@@ -66,7 +66,7 @@ pip install -r requirements.txt
 ```
 
 ### 4. Ejecución de la Simulación
-Ejecuta el script principal para generar las gráficas del modelo dinámico:
+Ejecuta el notebook interactivo para inspeccionar el modelo y generar las gráficas dinámicas:
 ```bash
-python src/simulacion_trafico_seir.py
+jupyter notebook simulacion_trafico_seir.ipynb
 ```
